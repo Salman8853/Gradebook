@@ -11,4 +11,14 @@ Later it can shrink in his normal position. so we can use that one also for last
 6: Monitoring the System: Use monitoring tools like Prometheus and Grafana to track system metrics and detect issues.
 Alerts: Set up alerts to notify you of system issues or performance degradation. such as cloud watch  for monitoring and SNS for high spike notifications.
 
+
+Q. how would you handle changes to roster and/or course structure ? 
+  Use flexible schema for non-transaction data such as MongoDB which can easily restructure . 
+  
+Q.  what else would it take to get this production-ready?
+    Persist the data in DB, and use a domain and configure it in Route53 to provide end service to user
+    Also use Security to authentication/authorization access of API's and document properly for better readability of code
+
+  
+
 Thanks
